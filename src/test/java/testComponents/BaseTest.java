@@ -26,6 +26,7 @@ public class BaseTest {
 	public WebDriver initilize(ITestContext context) {
 		driver = new ChromeDriver();
 		driver.get("https://awesomeqa.com/ui/index.php?route=common/home");
+		driver.manage().window().maximize();
 		context.setAttribute("WebDriver",driver);
 		return driver;
 	}

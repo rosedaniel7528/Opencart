@@ -33,6 +33,7 @@ public class Listeners extends BaseTest implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		WebDriver driver = (WebDriver) result.getTestContext().getAttribute("WebDriver");
 		String picturepath = null;
+		thread.get().fail(result.getThrowable());
 		try {
 			picturepath = getScreenshot(result.getMethod().getMethodName(),driver);
 		} catch (IOException e) {
