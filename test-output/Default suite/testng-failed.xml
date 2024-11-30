@@ -6,7 +6,7 @@
       <class name="SeleniumAutomation.Opencart.SIT">
         <methods>
           <include name="quit"/>
-          <include name="searchBox" invocation-numbers="0"/>
+          <include name="searchBox" invocation-numbers="0 0 0"/>
           <include name="initilize"/>
         </methods>
       </class> <!-- SeleniumAutomation.Opencart.SIT -->

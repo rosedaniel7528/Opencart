@@ -164,23 +164,34 @@
                   </a> <!-- searchBox({product=iPod Classic}) -->
                   <span class="method-name">searchBox</span>
                   <span class="parameters">({product=iPod Classic})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (550cbdf8d1144f07fa3edfd29446dd1b)] -&gt; css selector: strong i[class*=&apos;fa-shopping-cart&apos;]] (tried for 5 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;cart&quot; class=&quot;btn-group btn-block&quot;&gt;...&lt;/div&gt; is not clickable at point (1198, 20). Other element would receive the click: &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=131.0.6778.86)
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56928/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 550cbdf8d1144f07fa3edfd29446dd1b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.ReusableMethods.visibilityOf(ReusableMethods.java:32)
-	at pageObjectModel.Cartdialoguebox.clickChekout(Cartdialoguebox.java:27)
+Command: [e413b6ea44029865ef7f05a1d9e90702, clickElement {id=f.83C9E6DEDBDD42A7E55DB87992A4D2A6.d.C6D9FDF2D568750A86E46E0844EC6130.e.117}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58365}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58365/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e413b6ea44029865ef7f05a1d9e90702)] -&gt; id: cart]
+Session ID: e413b6ea44029865ef7f05a1d9e90702
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjectModel.Cartdialoguebox.clickChekout(Cartdialoguebox.java:26)
 	at SeleniumAutomation.Opencart.SIT.searchBox(SIT.java:61)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -198,15 +209,15 @@ Session ID: 550cbdf8d1144f07fa3edfd29446dd1b
                   </a> <!-- searchBox({product=iPod Classic}) -->
                   <span class="method-name">searchBox</span>
                   <span class="parameters">({product=iPod Classic})</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt; is not clickable at point (1168, 38). Other element would receive the click: &lt;div id=&quot;top-links&quot; class=&quot;nav pull-right&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;cart&quot; class=&quot;btn-group btn-block&quot;&gt;...&lt;/div&gt; is not clickable at point (1198, 20). Other element would receive the click: &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;...&lt;/span&gt;
   (Session info: chrome=131.0.6778.86)
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [306abb32eb1819c0ddd24faeb8277773, clickElement {id=f.40E1E61696699EC418CB24EA5C273FB1.d.51C3F8F10C7BC3959BBA0926F791997C.e.65}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56905/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (306abb32eb1819c0ddd24faeb8277773)] -&gt; css selector: strong i[class*=&apos;fa-shopping-cart&apos;]]
-Session ID: 306abb32eb1819c0ddd24faeb8277773
+Command: [dead3151d430319928cb3de794e1d31c, clickElement {id=f.4F048A73E4BD9BE88EB42C0DD7C3553A.d.FFD8820C09679EE020EE6E86C67914EA.e.110}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58312}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58312/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dead3151d430319928cb3de794e1d31c)] -&gt; id: cart]
+Session ID: dead3151d430319928cb3de794e1d31c
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -218,7 +229,7 @@ Session ID: 306abb32eb1819c0ddd24faeb8277773
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at pageObjectModel.Cartdialoguebox.clickChekout(Cartdialoguebox.java:28)
+	at pageObjectModel.Cartdialoguebox.clickChekout(Cartdialoguebox.java:26)
 	at SeleniumAutomation.Opencart.SIT.searchBox(SIT.java:61)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
@@ -235,12 +246,12 @@ Session ID: 306abb32eb1819c0ddd24faeb8277773
                   </a> <!-- searchBox({product=iPod Classic}) -->
                   <span class="method-name">searchBox</span>
                   <span class="parameters">({product=iPod Classic})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (84c77567b4bd533f94845b0d9cda945c)] -&gt; css selector: strong i[class*=&apos;fa-shopping-cart&apos;]] (tried for 5 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (0a8a75bc50c6dac226bf16f0a6d0b74a)] -&gt; css selector: strong i[class*=&apos;fa-shopping-cart&apos;]] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56869}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56869/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 84c77567b4bd533f94845b0d9cda945c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58343/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a8a75bc50c6dac226bf16f0a6d0b74a
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at utilities.ReusableMethods.visibilityOf(ReusableMethods.java:32)
@@ -348,19 +359,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchBox')
 data.setCell(0, 2, 'SeleniumAutomation.Opencart.SIT')
-data.setCell(0, 3, 10114);
+data.setCell(0, 3, 9474);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchBox')
+data.setCell(1, 1, 'placeorder')
 data.setCell(1, 2, 'SeleniumAutomation.Opencart.SIT')
-data.setCell(1, 3, 9202);
+data.setCell(1, 3, 7271);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'placeorder')
+data.setCell(2, 1, 'searchBox')
 data.setCell(2, 2, 'SeleniumAutomation.Opencart.SIT')
-data.setCell(2, 3, 6713);
+data.setCell(2, 3, 6721);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'searchBox')
 data.setCell(3, 2, 'SeleniumAutomation.Opencart.SIT')
-data.setCell(3, 3, 4936);
+data.setCell(3, 3, 5353);
 window.suiteTableData['Openacart']= { tableData: data, tableDiv: 'times-div-Openacart'}
 return data;
 }
@@ -411,45 +422,45 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchBox({product=iPod Classic})</span>
-                <span class="method-start">3144 ms</span>
+                <span class="method-start">4269 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">placeorder({product=Nikon D300})</span>
-                <span class="method-start">3871 ms</span>
+                <span class="method-start">4406 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">10597 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">quit</span>
-                <span class="method-start">13265 ms</span>
+                <span class="method-start">9633 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilize(org.testng.TestRunner@55322aab)</span>
-                <span class="method-start">13495 ms</span>
+                <span class="method-start">9924 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">11688 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">searchBox({product=iPod Classic})</span>
-                <span class="method-start">15532 ms</span>
+                <span class="method-start">12103 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">20473 ms</span>
+                <span class="method-start">21582 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initilize(org.testng.TestRunner@55322aab)</span>
-                <span class="method-start">20710 ms</span>
+                <span class="method-start">21866 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searchBox({product=iPod Classic})</span>
-                <span class="method-start">22782 ms</span>
+                <span class="method-start">25223 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">32171 ms</span>
+                <span class="method-start">32194 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
