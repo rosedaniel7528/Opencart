@@ -22,7 +22,6 @@ public class SIT extends BaseTest{
 	@Test(dataProvider="readData",retryAnalyzer = testComponents.Retry.class)
     public void placeorder(HashMap<String,String> data) {
 		
-		//cicd demo
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
@@ -70,6 +69,18 @@ public class SIT extends BaseTest{
 		//order success page
 		OrderSuccessPage success = new OrderSuccessPage(driver);
 		success.orderconfirmation(); //Verifying success msg
+	}
+	
+	@Test
+	public void javactions() {
+		HomePage homepage= new HomePage(driver);
+		homepage.clickdesktop();
+	}
+	
+	@Test
+	public void brokenLinks() throws IOException {
+		HomePage homepage= new HomePage(driver);
+			homepage.brokenlinks();
 	}
 	
 	@DataProvider

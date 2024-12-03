@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Openacart" class="navigator-link">
-              <span class="suite-name border-failed">Openacart</span>
+              <span class="suite-name border-passed">Openacart</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Openacart" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,40 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  2 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Openacart" class="hide-methods failed suite-Openacart"> (hide)</a> <!-- hide-methods failed suite-Openacart -->
-                      <a href="#" panel-name="suite-Openacart" class="show-methods failed suite-Openacart"> (show)</a> <!-- show-methods failed suite-Openacart -->
-                    </span>
-                    <div class="method-list-content failed suite-Openacart">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Openacart" title="SeleniumAutomation.Opencart.SIT" class="method navigator-link" hash-for-method="searchBox({product=iPod Classic})">searchBox({product=iPod Classic})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Openacart -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Openacart" class="hide-methods skipped suite-Openacart"> (hide)</a> <!-- hide-methods skipped suite-Openacart -->
-                      <a href="#" panel-name="suite-Openacart" class="show-methods skipped suite-Openacart"> (show)</a> <!-- show-methods skipped suite-Openacart -->
-                    </span>
-                    <div class="method-list-content skipped suite-Openacart">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Openacart" title="SeleniumAutomation.Opencart.SIT" class="method navigator-link" hash-for-method="searchBox({product=iPod Classic})">searchBox({product=iPod Classic})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Openacart" title="SeleniumAutomation.Opencart.SIT" class="method navigator-link" hash-for-method="searchBox({product=iPod Classic})">searchBox({product=iPod Classic})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Openacart -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -137,7 +104,22 @@
                     <div class="method-list-content passed suite-Openacart">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Openacart" title="SeleniumAutomation.Opencart.SIT" class="method navigator-link" hash-for-method="brokenLinks">brokenLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Openacart" title="SeleniumAutomation.Opencart.SIT" class="method navigator-link" hash-for-method="javactions">javactions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Openacart" title="SeleniumAutomation.Opencart.SIT" class="method navigator-link" hash-for-method="placeorder({product=Nikon D300})">placeorder({product=Nikon D300})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Openacart" title="SeleniumAutomation.Opencart.SIT" class="method navigator-link" hash-for-method="searchBox({product=iPod Classic})">searchBox({product=iPod Classic})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Openacart -->
@@ -152,122 +134,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Openacart" class="panel Openacart">
-          <div class="suite-Openacart-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">SeleniumAutomation.Opencart.SIT</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchBox({product=iPod Classic})">
-                  </a> <!-- searchBox({product=iPod Classic}) -->
-                  <span class="method-name">searchBox</span>
-                  <span class="parameters">({product=iPod Classic})</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;cart&quot; class=&quot;btn-group btn-block&quot;&gt;...&lt;/div&gt; is not clickable at point (1198, 20). Other element would receive the click: &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;...&lt;/span&gt;
-  (Session info: chrome=131.0.6778.86)
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e413b6ea44029865ef7f05a1d9e90702, clickElement {id=f.83C9E6DEDBDD42A7E55DB87992A4D2A6.d.C6D9FDF2D568750A86E46E0844EC6130.e.117}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58365}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58365/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e413b6ea44029865ef7f05a1d9e90702)] -&gt; id: cart]
-Session ID: e413b6ea44029865ef7f05a1d9e90702
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at pageObjectModel.Cartdialoguebox.clickChekout(Cartdialoguebox.java:26)
-	at SeleniumAutomation.Opencart.SIT.searchBox(SIT.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Openacart-class-failed -->
-          <div class="suite-Openacart-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">SeleniumAutomation.Opencart.SIT</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchBox({product=iPod Classic})">
-                  </a> <!-- searchBox({product=iPod Classic}) -->
-                  <span class="method-name">searchBox</span>
-                  <span class="parameters">({product=iPod Classic})</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;cart&quot; class=&quot;btn-group btn-block&quot;&gt;...&lt;/div&gt; is not clickable at point (1198, 20). Other element would receive the click: &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;...&lt;/span&gt;
-  (Session info: chrome=131.0.6778.86)
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dead3151d430319928cb3de794e1d31c, clickElement {id=f.4F048A73E4BD9BE88EB42C0DD7C3553A.d.FFD8820C09679EE020EE6E86C67914EA.e.110}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58312}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58312/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dead3151d430319928cb3de794e1d31c)] -&gt; id: cart]
-Session ID: dead3151d430319928cb3de794e1d31c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at pageObjectModel.Cartdialoguebox.clickChekout(Cartdialoguebox.java:26)
-	at SeleniumAutomation.Opencart.SIT.searchBox(SIT.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchBox({product=iPod Classic})">
-                  </a> <!-- searchBox({product=iPod Classic}) -->
-                  <span class="method-name">searchBox</span>
-                  <span class="parameters">({product=iPod Classic})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (0a8a75bc50c6dac226bf16f0a6d0b74a)] -&gt; css selector: strong i[class*=&apos;fa-shopping-cart&apos;]] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58343/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a8a75bc50c6dac226bf16f0a6d0b74a
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.ReusableMethods.visibilityOf(ReusableMethods.java:32)
-	at pageObjectModel.Cartdialoguebox.clickChekout(Cartdialoguebox.java:27)
-	at SeleniumAutomation.Opencart.SIT.searchBox(SIT.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Openacart-class-skipped -->
           <div class="suite-Openacart-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -276,10 +142,32 @@ Session ID: 0a8a75bc50c6dac226bf16f0a6d0b74a
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="brokenLinks">
+                  </a> <!-- brokenLinks -->
+                  <span class="method-name">brokenLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="javactions">
+                  </a> <!-- javactions -->
+                  <span class="method-name">javactions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="placeorder({product=Nikon D300})">
                   </a> <!-- placeorder({product=Nikon D300}) -->
                   <span class="method-name">placeorder</span>
                   <span class="parameters">({product=Nikon D300})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchBox({product=iPod Classic})">
+                  </a> <!-- searchBox({product=iPod Classic}) -->
+                  <span class="method-name">searchBox</span>
+                  <span class="parameters">({product=iPod Classic})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -293,11 +181,11 @@ Session ID: 0a8a75bc50c6dac226bf16f0a6d0b74a
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Openacart&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Openacart&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;testComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;SeleniumAutomation.Opencart.SIT&quot;&gt;
         &lt;methods&gt;
@@ -306,7 +194,7 @@ Session ID: 0a8a75bc50c6dac226bf16f0a6d0b74a
       &lt;/class&gt; &lt;!-- SeleniumAutomation.Opencart.SIT --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;SeleniumAutomation.Opencart.SIT&quot;&gt;
         &lt;methods&gt;
@@ -315,6 +203,24 @@ Session ID: 0a8a75bc50c6dac226bf16f0a6d0b74a
       &lt;/class&gt; &lt;!-- SeleniumAutomation.Opencart.SIT --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SeleniumAutomation.Opencart.SIT&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;javactions&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- SeleniumAutomation.Opencart.SIT --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SeleniumAutomation.Opencart.SIT&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;brokenLinks&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- SeleniumAutomation.Opencart.SIT --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test4 --&gt;
 &lt;/suite&gt; &lt;!-- Openacart --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -330,6 +236,12 @@ Session ID: 0a8a75bc50c6dac226bf16f0a6d0b74a
               </li>
               <li>
                 <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test4 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -359,24 +271,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchBox')
 data.setCell(0, 2, 'SeleniumAutomation.Opencart.SIT')
-data.setCell(0, 3, 9474);
+data.setCell(0, 3, 12653);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'placeorder')
 data.setCell(1, 2, 'SeleniumAutomation.Opencart.SIT')
-data.setCell(1, 3, 7271);
+data.setCell(1, 3, 10746);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'searchBox')
+data.setCell(2, 1, 'brokenLinks')
 data.setCell(2, 2, 'SeleniumAutomation.Opencart.SIT')
-data.setCell(2, 3, 6721);
+data.setCell(2, 3, 5974);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchBox')
+data.setCell(3, 1, 'javactions')
 data.setCell(3, 2, 'SeleniumAutomation.Opencart.SIT')
-data.setCell(3, 3, 5353);
+data.setCell(3, 3, 1422);
 window.suiteTableData['Openacart']= { tableData: data, tableDiv: 'times-div-Openacart'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Openacart">
               </div> <!-- times-div-Openacart -->
             </div> <!-- times-div -->
@@ -391,13 +303,33 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Openacart" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">SeleniumAutomation.Opencart.SIT</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">javactions</span>
+                <br/>
+                <span class="ignored-method-name">javactions</span>
+                <br/>
+                <span class="ignored-method-name">javactions</span>
+                <br/>
+                <span class="ignored-method-name">brokenLinks</span>
+                <br/>
                 <span class="ignored-method-name">searchBox</span>
+                <br/>
+                <span class="ignored-method-name">brokenLinks</span>
+                <br/>
+                <span class="ignored-method-name">brokenLinks</span>
+                <br/>
+                <span class="ignored-method-name">searchBox</span>
+                <br/>
+                <span class="ignored-method-name">searchBox</span>
+                <br/>
+                <span class="ignored-method-name">placeorder</span>
+                <br/>
+                <span class="ignored-method-name">placeorder</span>
                 <br/>
                 <span class="ignored-method-name">placeorder</span>
                 <br/>
@@ -413,54 +345,52 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumAutomation.Opencart.SIT</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">initilize(org.testng.TestRunner@49cb9cb5)</span>
+                <span class="method-name">initilize(org.testng.TestRunner@45fd9a4d)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">initilize(org.testng.TestRunner@55322aab)</span>
+                <span class="method-name">initilize(org.testng.TestRunner@50468873)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initilize(org.testng.TestRunner@146587a2)</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initilize(org.testng.TestRunner@5f0e9815)</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchBox({product=iPod Classic})</span>
-                <span class="method-start">4269 ms</span>
+                <span class="method-name">brokenLinks</span>
+                <span class="method-start">6870 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">placeorder({product=Nikon D300})</span>
-                <span class="method-start">4406 ms</span>
+                <span class="method-start">7189 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quit</span>
-                <span class="method-start">9633 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilize(org.testng.TestRunner@55322aab)</span>
-                <span class="method-start">9924 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">quit</span>
-                <span class="method-start">11688 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">searchBox({product=iPod Classic})</span>
-                <span class="method-start">12103 ms</span>
+                <span class="method-start">7199 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quit</span>
-                <span class="method-start">21582 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initilize(org.testng.TestRunner@55322aab)</span>
-                <span class="method-start">21866 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">searchBox({product=iPod Classic})</span>
-                <span class="method-start">25223 ms</span>
+                <span class="method-name">javactions</span>
+                <span class="method-start">7230 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">32194 ms</span>
+                <span class="method-start">8723 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">12846 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">17939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">19854 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
