@@ -1,7 +1,7 @@
 # 🛒 OpenCart Automation Testing Project
 
 ## 📄 Description
-This is an 🛠️ automation testing project for an OpenCart-based 🛍️ electronic store. Built using Selenium 🕸️ with Java ☕ and TestNG 🧪, the project automates major test scenarios such as validating website login 🔑, placing orders 🛒, utilizing the search box 🔍, and more. The project ensures robust testing of the store's core functionalities ✅.
+This is an 🛠️ automation testing project for an OpenCart 🛍️ electronic store. Built using Selenium 🕸️ with Java ☕ and TestNG 🧪, the project automates major test scenarios such as validating website login 🔑, placing orders 🛒, utilizing the search box 🔍, and more. The project ensures robust testing of the store's core functionalities ✅.
 
 ---
 
@@ -23,6 +23,16 @@ This is an 🛠️ automation testing project for an OpenCart-based 🛍️ elec
   - 🔽 Dropdowns
   - 🔴 Pop-ups
   - 🖼️ IFrames and more
+ 
+---
+
+## 🧰 Key Technologies
+- **Automation Framework:** Selenium 🕸️ with Java ☕
+- **Test Management:** TestNG 🧪
+- **Build Management:** Maven 🏗️
+- **Continuous Integration/Delivery:** Jenkins 🖥️
+- **Reporting:** Extent Reports 📝
+- **Data Handling:** JSON 🗂️
 
 ---
 
@@ -35,15 +45,6 @@ This is an 🛠️ automation testing project for an OpenCart-based 🛍️ elec
    - Push code to the repository 📤.
    - Jenkins pipeline 🖥️ will automatically execute the test cases ✅.
 
----
-
-## 🧰 Key Technologies
-- **Automation Framework:** Selenium 🕸️ with Java ☕
-- **Test Management:** TestNG 🧪
-- **Build Management:** Maven 🏗️
-- **Continuous Integration/Delivery:** Jenkins 🖥️
-- **Reporting:** Extent Reports 📝
-- **Data Handling:** JSON 🗂️
 
 ---
 
