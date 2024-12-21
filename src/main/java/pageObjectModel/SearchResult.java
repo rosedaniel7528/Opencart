@@ -28,8 +28,8 @@ public class SearchResult {
 	
 	public void selectproduct(String productname) throws InterruptedException {
 		
-		//reuse.visibilityOfAllElements(productlist);
-		Thread.sleep(3000);
+		reuse.visibilityOfAllElements(productlist);
+		//Thread.sleep(1000);
 		List<WebElement> lop = productlist;
 		List<WebElement> pro = lop.stream()
 				.filter(c -> c.findElement(By.cssSelector("h4")).getText().equalsIgnoreCase(productname))

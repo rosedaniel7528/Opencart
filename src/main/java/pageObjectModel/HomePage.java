@@ -47,11 +47,11 @@ public class HomePage {
 		cameraicon.click();
 	}
 
-	public void searchbox() {
+	public void searchbox(String productname) {
 
 		reusablemethods.visibilityOf(searchfield);
 		searchbox.click();
-		searchbox.sendKeys("ipod");
+		searchbox.sendKeys(productname);
 		searchbtn.click();
 	}
 

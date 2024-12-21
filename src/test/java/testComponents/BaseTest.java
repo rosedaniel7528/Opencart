@@ -1,6 +1,7 @@
 package testComponents;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.io.File;
@@ -12,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -24,7 +26,10 @@ public class BaseTest {
 
 	@BeforeMethod
 	public WebDriver initilize(ITestContext context) {
-		driver = new ChromeDriver();
+		ChromeOptions option = new ChromeOptions();
+		option.setExperimentalOption("excludeSwitches",
+			     Arrays.asList("disable-popup-blocking"));
+		driver = new ChromeDriver(option);
 		driver.get("https://awesomeqa.com/ui/index.php?route=common/home");
 		driver.manage().window().maximize();
 		context.setAttribute("WebDriver",driver);

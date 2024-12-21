@@ -1,5 +1,6 @@
 package pageObjectModel;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,16 +16,18 @@ public class Cartdialoguebox{
 		this.reusablemethod= new ReusableMethods(driver);
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy(id="cart")
+	@FindBy(css=".btn.btn-inverse.btn-block.btn-lg.dropdown-toggle")
 	WebElement cart;
 	
 	@FindBy(css="strong i[class*='fa-shopping-cart']")
 	WebElement cartbox;
 	
-	public void clickChekout() {
-		reusablemethod.elementToBeClickable(cart);
+	
+	public void clickChekout() throws InterruptedException {
+		Thread.sleep(1000);
+		reusablemethod.visibilityOf(cart);
 		cart.click();
-		reusablemethod.elementToBeClickable(cartbox);
+		reusablemethod.visibilityOf(cartbox);
 		cartbox.click();
 	}
 }

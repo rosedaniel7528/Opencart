@@ -20,7 +20,7 @@ import testComponents.BaseTest;
 public class SIT extends BaseTest{
 
 	@Test(dataProvider="readData",retryAnalyzer = testComponents.Retry.class)
-    public void placeorder(HashMap<String,String> data) {
+    public void placeorder(HashMap<String,String> data) throws InterruptedException {
 		
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -53,7 +53,7 @@ public class SIT extends BaseTest{
 		String productname = data.get("product");
 		//home page
 		HomePage homepage = new HomePage(driver);
-		homepage.searchbox();
+		homepage.searchbox(productname);
 		//product list
 		SearchResult searchresult = new SearchResult(driver);
 		searchresult.selectproduct(productname);
