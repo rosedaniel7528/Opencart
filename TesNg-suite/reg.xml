@@ -4,16 +4,6 @@
 	<listeners>
 		<listener class-name="testComponents.Listeners" />
 	</listeners>
-	<test  name="Test">
-		<classes>
-			<class name="SeleniumAutomation.Opencart.SIT">
-				<methods>
-					<include name="placeorder"></include>
-				</methods>
-			</class>
-		</classes>
-	</test> <!--
-	Test -->
 	<test  name="Test2">
 		<classes>
 			<class name="SeleniumAutomation.Opencart.SIT">

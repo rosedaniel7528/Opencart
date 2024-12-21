@@ -24,7 +24,7 @@ public class Cartdialoguebox{
 	public void clickChekout() {
 		reusablemethod.elementToBeClickable(cart);
 		cart.click();
-		reusablemethod.visibilityOf(cartbox);
+		reusablemethod.elementToBeClickable(cartbox);
 		cartbox.click();
 	}
 }

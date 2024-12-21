@@ -15,4 +15,15 @@
       </class> <!-- SeleniumAutomation.Opencart.SIT -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="4" parallel="tests" name="Test2(failed)" verbose="0">
+    <classes>
+      <class name="SeleniumAutomation.Opencart.SIT">
+        <methods>
+          <include name="quit"/>
+          <include name="searchBox" invocation-numbers="0"/>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- SeleniumAutomation.Opencart.SIT -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Openacart] -->
