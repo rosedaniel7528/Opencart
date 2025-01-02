@@ -53,7 +53,7 @@ public class BaseTest {
 		return map;
 	}
 	
-	public String getScreenshot(String testname, WebDriver driver2) throws IOException {
+	    public String getScreenshot(String testname, WebDriver driver2) throws IOException {
 		TakesScreenshot take =(TakesScreenshot)driver2;
 		File source =take.getScreenshotAs(OutputType.FILE);
 		File picture = new File(System.getProperty("user.dir")+"\\reports\\"+testname+".png");
