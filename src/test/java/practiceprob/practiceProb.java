@@ -30,11 +30,10 @@ public class practiceProb {
 		Actions act = new Actions(driver);
 		
 		WebElement k=driver.findElement(By.cssSelector("ul[class='thumbnails'] li:nth-child(1) a:nth-child(1)"));
-		
+	
 		act.clickAndHold(k).build().perform();
-		Thread.sleep(3000);
 		act.moveToElement(driver.findElement(By.id("search"))).release().build().perform();
-		
+
 		((JavascriptExecutor)driver).executeScript("window.open('about:blank','blank')");
 		Set<String> tabs= driver.getWindowHandles();
 		for(String i: tabs) {

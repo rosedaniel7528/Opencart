@@ -2,35 +2,12 @@
 <testng-results ignored="12" total="16" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-21T18:57:52 IST" name="Openacart" finished-at="2024-12-21T18:58:11 IST" duration-ms="18955">
+  <suite started-at="2025-01-02T13:04:05 IST" name="Openacart" finished-at="2025-01-02T13:04:22 IST" duration-ms="17011">
     <groups>
     </groups>
-    <test started-at="2024-12-21T18:57:52 IST" name="Test3" finished-at="2024-12-21T18:58:03 IST" duration-ms="10993">
+    <test started-at="2025-01-02T13:04:05 IST" name="Test3" finished-at="2025-01-02T13:04:15 IST" duration-ms="9779">
       <class name="SeleniumAutomation.Opencart.SIT">
-        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@15a34df2]" started-at="2024-12-21T18:57:52 IST" name="initilize" finished-at="2024-12-21T18:57:58 IST" duration-ms="5561" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@13526e59]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="javactions()[pri:0, instance:SeleniumAutomation.Opencart.SIT@15a34df2]" started-at="2024-12-21T18:57:58 IST" name="javactions" finished-at="2024-12-21T18:57:58 IST" duration-ms="467" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- javactions -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@15a34df2]" started-at="2024-12-21T18:57:59 IST" name="quit" finished-at="2024-12-21T18:58:03 IST" duration-ms="4887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- SeleniumAutomation.Opencart.SIT -->
-    </test> <!-- Test3 -->
-    <test started-at="2024-12-21T18:57:52 IST" name="Test4" finished-at="2024-12-21T18:58:05 IST" duration-ms="12199">
-      <class name="SeleniumAutomation.Opencart.SIT">
-        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@48e1f6c7]" started-at="2024-12-21T18:57:52 IST" name="initilize" finished-at="2024-12-21T18:57:58 IST" duration-ms="5128" status="PASS">
+        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@15a34df2]" started-at="2025-01-02T13:04:05 IST" name="initilize" finished-at="2025-01-02T13:04:12 IST" duration-ms="7230" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,19 +18,42 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="brokenLinks()[pri:0, instance:SeleniumAutomation.Opencart.SIT@48e1f6c7]" started-at="2024-12-21T18:57:58 IST" name="brokenLinks" finished-at="2024-12-21T18:58:03 IST" duration-ms="5031" status="PASS">
+        <test-method signature="javactions()[pri:0, instance:SeleniumAutomation.Opencart.SIT@15a34df2]" started-at="2025-01-02T13:04:12 IST" name="javactions" finished-at="2025-01-02T13:04:13 IST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javactions -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@15a34df2]" started-at="2025-01-02T13:04:13 IST" name="quit" finished-at="2025-01-02T13:04:15 IST" duration-ms="1685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SeleniumAutomation.Opencart.SIT -->
+    </test> <!-- Test3 -->
+    <test started-at="2025-01-02T13:04:05 IST" name="Test4" finished-at="2025-01-02T13:04:18 IST" duration-ms="12801">
+      <class name="SeleniumAutomation.Opencart.SIT">
+        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@48e1f6c7]" started-at="2025-01-02T13:04:05 IST" name="initilize" finished-at="2025-01-02T13:04:12 IST" duration-ms="7372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13526e59]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="brokenLinks()[pri:0, instance:SeleniumAutomation.Opencart.SIT@48e1f6c7]" started-at="2025-01-02T13:04:12 IST" name="brokenLinks" finished-at="2025-01-02T13:04:17 IST" duration-ms="5135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brokenLinks -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@48e1f6c7]" started-at="2024-12-21T18:58:03 IST" name="quit" finished-at="2024-12-21T18:58:05 IST" duration-ms="1983" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@48e1f6c7]" started-at="2025-01-02T13:04:17 IST" name="quit" finished-at="2025-01-02T13:04:18 IST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- SeleniumAutomation.Opencart.SIT -->
     </test> <!-- Test4 -->
-    <test started-at="2024-12-21T18:57:52 IST" name="Test" finished-at="2024-12-21T18:58:11 IST" duration-ms="18838">
+    <test started-at="2025-01-02T13:04:05 IST" name="Test" finished-at="2025-01-02T13:04:22 IST" duration-ms="16937">
       <class name="SeleniumAutomation.Opencart.SIT">
-        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@1a75e76a]" started-at="2024-12-21T18:57:53 IST" name="initilize" finished-at="2024-12-21T18:57:58 IST" duration-ms="5337" status="PASS">
+        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@1a75e76a]" started-at="2025-01-02T13:04:05 IST" name="initilize" finished-at="2025-01-02T13:04:12 IST" duration-ms="6961" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,7 +64,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="placeorder(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Opencart.SIT@1a75e76a]" started-at="2024-12-21T18:57:58 IST" name="placeorder" data-provider="readData" finished-at="2024-12-21T18:58:11 IST" duration-ms="13053" status="PASS">
+        <test-method signature="placeorder(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Opencart.SIT@1a75e76a]" started-at="2025-01-02T13:04:12 IST" name="placeorder" data-provider="readData" finished-at="2025-01-02T13:04:22 IST" duration-ms="9416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeorder -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@1a75e76a]" started-at="2024-12-21T18:58:11 IST" name="quit" finished-at="2024-12-21T18:58:11 IST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@1a75e76a]" started-at="2025-01-02T13:04:22 IST" name="quit" finished-at="2025-01-02T13:04:22 IST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- SeleniumAutomation.Opencart.SIT -->
     </test> <!-- Test -->
-    <test started-at="2024-12-21T18:57:52 IST" name="Test2" finished-at="2024-12-21T18:58:11 IST" duration-ms="18955">
+    <test started-at="2025-01-02T13:04:05 IST" name="Test2" finished-at="2025-01-02T13:04:22 IST" duration-ms="17011">
       <class name="SeleniumAutomation.Opencart.SIT">
-        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@3cce5371]" started-at="2024-12-21T18:57:53 IST" name="initilize" finished-at="2024-12-21T18:57:58 IST" duration-ms="5416" status="PASS">
+        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@3cce5371]" started-at="2025-01-02T13:04:05 IST" name="initilize" finished-at="2025-01-02T13:04:12 IST" duration-ms="7133" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,7 +94,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="searchBox(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Opencart.SIT@3cce5371]" started-at="2024-12-21T18:57:58 IST" name="searchBox" data-provider="searchboxdata" finished-at="2024-12-21T18:58:09 IST" duration-ms="11326" status="PASS">
+        <test-method signature="searchBox(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Opencart.SIT@3cce5371]" started-at="2025-01-02T13:04:12 IST" name="searchBox" data-provider="searchboxdata" finished-at="2025-01-02T13:04:22 IST" duration-ms="9280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +105,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBox -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@3cce5371]" started-at="2024-12-21T18:58:09 IST" name="quit" finished-at="2024-12-21T18:58:11 IST" duration-ms="1968" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@3cce5371]" started-at="2025-01-02T13:04:22 IST" name="quit" finished-at="2025-01-02T13:04:22 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

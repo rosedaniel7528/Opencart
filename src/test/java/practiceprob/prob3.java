@@ -20,8 +20,7 @@ public class prob3 {
 
 		ChromeOptions option = new ChromeOptions();
 		//to get rid of chrome popups like location,mic
-		option.setExperimentalOption("excludeSwitches",
-			     Arrays.asList("disable-popup-blocking"));
+		option.setExperimentalOption("excludeSwitches",Arrays.asList("disable-popup-blocking"));
 		option.setAcceptInsecureCerts(true);
 		// to set download location
 		Map<String, Object> prefs = new HashMap<String, Object>();

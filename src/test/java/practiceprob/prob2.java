@@ -37,11 +37,10 @@ public class prob2 {
 	public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
 		
 			  prob2 obj= new prob2();
-			  obj.newtab();
+			  obj.randomfunctions();
 	}
 	
 	public void randomfunctions() throws InterruptedException, MalformedURLException, IOException {
-		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		WebDriverWait waitt = new WebDriverWait(driver, Duration.ofSeconds(5));
 		driver.manage().window().maximize();
@@ -96,6 +95,7 @@ public class prob2 {
 			   
 			   List<WebElement> list= driver.findElements(By.xpath("//li[@class='gf-li']/a"));
 			   String clk= Keys.chord(Keys.CONTROL,Keys.ENTER);
+			   
 			   for(WebElement l:list) {
 				   l.sendKeys(clk);
 			   }
@@ -103,7 +103,7 @@ public class prob2 {
 			   
 			   String parent = driver.getWindowHandle();
 			   for(String h:hand) {
-				   if(!h.equals(parent)) {
+				   if(!h.equals(parent)){
 					  driver.switchTo().window(h);
 					  driver.close();
 				   }
@@ -117,8 +117,8 @@ public class prob2 {
 			  
 			  
 			  for(WebElement l: list) {
-				  String url = l.getAttribute("href");
-				  HttpURLConnection obj= (HttpURLConnection) new URL(url).openConnection();
+				  String link = l.getAttribute("href");
+				  HttpURLConnection obj= (HttpURLConnection) new URL(link).openConnection();
 				  obj.setRequestMethod("HEAD");
 				  obj.connect();
 				  int code = obj.getResponseCode();
